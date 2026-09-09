@@ -3,10 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
-        <link rel="stylesheet" href="styles.css">
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        
+        <header>
+            
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#credits">Credits</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="nav-social">
+                <a href="https://github.com/Thimeo-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </header>
+        <main>
+            </section>
+            <section class="hero" id="accueil">
+                <div class="hero-content">
+                    <h1>Portfolio</h1>
+                    <p>Thiméo Sousa Duarte</p>
+                </div>
+                    <div class="hero-divider">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,0 C150,90 350,-40 500,65 C650,170 900,10 1200,40 L1200,120 L0,120 Z" fill="#e3e5de"></path>
+                        </svg>
+                    </div>
+            </section>
+                <section class="about" id="a-propos">
+                    <h2>À propos de moi</h2>
+                    <p>Je suis un développeur web passionné par la création de sites web modernes et interactifs. J'aime apprendre de nouvelles technologies et relever des défis.</p>
+                </section>
+                    <div class="section-divider">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,0 C150,90 350,-40 500,65 C650,170 900,10 1200,40 L1200,120 L0,120 Z" fill="#232d26"></path>
+                        </svg>
+                    </div>
+            <section class="projects" id="projets">
+                <h2>Mes Projets</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>Projet 1</h3>
+                        <p>Description du projet 1.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Projet 2</h3>
+                        <p>Description du projet 2.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="section2-divider">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0 C150,90 350,-40 500,65 C650,170 900,10 1200,40 L1200,120 L0,120 Z" fill="#e3e5de"></path>
+                </svg>
+            </div>
+            <section class="credits" id="credits">
+                <h2>Crédits</h2>
+                <p>Merci à tous ceux qui ont contribué à mes projets et m'ont soutenu dans mon parcours de développement web.</p>
+            </section>
+            <div class="section3-divider">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0 C150,90 350,-40 500,65 C650,170 900,10 1200,40 L1200,120 L0,120 Z" fill="#232d26"></path>
+                </svg>
+            </div>
+            <section class="contact" id="contact">
+                <h2>Contactez-moi</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
     </body>
 </html>

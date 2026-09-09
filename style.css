@@ -1,0 +1,210 @@
+
+html, body {
+    margin: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajoute un espace en haut pour compenser la hauteur du header */
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Force la barre à rester tout en haut */
+
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 50px;
+    padding: 20px 40px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(53, 48, 48);
+    opacity: 0.8;
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('envpaper.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 0.9;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero p {
+    font-size: 24px;
+    line-height: 0.9;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Style du séparateur SVG dans style.css */
+.hero-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10; /* Force la vague à passer AU-DESSUS des sections */
+}
+
+.hero-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+section.about {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #e3e5de;
+    color: #1c241e;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+section.about h2 {
+    font-size: 36px;
+    color: #2d3b32;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+section.projects {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #232d26;
+    color: #e0e6ed;
+}
+
+section.projects h2 {
+    font-size: 36px;
+    color: #e3e5de;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+section.credits {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #e3e5de;
+    color: #1c241e;
+}
+
+section.credits h2 {
+    font-size: 36px;
+    color: #2d3b32;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+section.contact {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #232d26;
+    color: #e0e6ed;
+}
+
+section.contact h2 {
+    font-size: 36px;
+    color: #e3e5de;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.section-divider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #e3e5de;
+}
+
+.section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.section2-divider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #232d26;
+}
+
+.section2-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.section3-divider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #e3e5de;
+}
+
+.section3-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+section.contact form {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #1c241e;
+}

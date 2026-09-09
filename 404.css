@@ -1,0 +1,170 @@
+.my-custom-face-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: #ffffff00;
+  color: #1a1a1a;
+}
+
+.my-custom-face-container .face {
+  width: 200px;
+}
+
+.my-custom-face-container .face__eyes,
+.my-custom-face-container .face__eye-lid,
+.my-custom-face-container .face__mouth-left,
+.my-custom-face-container .face__mouth-right,
+.my-custom-face-container .face__nose,
+.my-custom-face-container .face__pupil {
+  animation: eyes 1s 0.3s forwards;
+}
+
+.my-custom-face-container .face__eye-lid,
+.my-custom-face-container .face__pupil {
+  animation-duration: 4s;
+  animation-delay: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.my-custom-face-container .face__eye-lid {
+  animation-name: eye-lid;
+}
+.my-custom-face-container .face__mouth-left {
+  animation-name: mouth-left;
+}
+.my-custom-face-container .face__mouth-right {
+  animation-name: mouth-right;
+}
+.my-custom-face-container .face__nose {
+  animation-name: nose;
+}
+.my-custom-face-container .face__pupil {
+  animation-name: pupil;
+}
+
+@keyframes eye-lid {
+  0%,
+  40%,
+  45%,
+  100% {
+    transform: translateY(0);
+  }
+  42.5% {
+    transform: translateY(17.5px);
+  }
+}
+
+@keyframes eyes {
+  from {
+    transform: translateY(112.5px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes pupil {
+  0%,
+  37.5%,
+  40%,
+  45%,
+  87.5%,
+  100% {
+    stroke-dashoffset: 0;
+    transform: translate(0, 0);
+  }
+  12.5%,
+  25%,
+  62.5%,
+  75% {
+    transform: translate(-35px, 0);
+  }
+  42.5% {
+    stroke-dashoffset: 35;
+    transform: translate(0, 17.5px);
+  }
+}
+
+@keyframes mouth-left {
+  from,
+  50% {
+    stroke-dashoffset: -102;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes mouth-right {
+  from,
+  50% {
+    stroke-dashoffset: 102;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes nose {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 22.5px);
+  }
+}
+
+.face__text {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s 1.5s forwards;
+  position: relative;
+  width: 100%; /* S'assure de prendre toute la largeur sous la tête */
+}
+
+/* Conteneur principal : aligne le visage SVG et le texte verticalement */
+.my-custom-face-container {
+    display: flex;
+    flex-direction: column; /* Place les éléments du haut vers le bas */
+    align-items: center;    /* Centre horizontalement le SVG et le texte */
+    justify-content: center;
+    min-height: 100vh;      /* Centre le tout au milieu de l'écran */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Taille de la tête SVG */
+.face {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* Bloc de texte sous la tête */
+.face__text {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style des liens et titres à l'intérieur */
+.face__text h1 {
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+.face__text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.face__text a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: bold;
+}
