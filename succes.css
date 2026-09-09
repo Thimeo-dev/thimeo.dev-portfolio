@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Empêche tout scroll */
+}
+
+.loader {
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    height: 34px; /* Légèrement agrandi */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* Remplace le fond blanc (#fff) par un ton sombre (#1a1a1a) et les billes en blanc (#fff) */
+    background: radial-gradient(farthest-side, #fff 95%, #0000) 35% 35%/6px 6px no-repeat #1a1a1a;
+    transform: scaleX(var(--s, 1)) rotate(0deg);
+    animation: l6 1s infinite linear;
+}
+
+.loader:after {
+    --s: -1;
+    animation-delay: -0.1s;
+}
+
+@keyframes l6 {
+    100% {
+        transform: scaleX(var(--s, 1)) rotate(360deg);
+    }
+}
+
+.face__text {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s 1.5s forwards;
+  position: relative;
+  width: 100%; /* S'assure de prendre toute la largeur sous la tête */
+}
+
+/* Conteneur principal : aligne le visage SVG et le texte verticalement */
+.my-custom-face-container {
+    display: flex;
+    flex-direction: column; /* Place les éléments du haut vers le bas */
+    align-items: center;    /* Centre horizontalement le SVG et le texte */
+    justify-content: center;
+    min-height: 100vh;      /* Centre le tout au milieu de l'écran */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Taille de la tête SVG */
+.face {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* Bloc de texte sous la tête */
+.face__text {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style des liens et titres à l'intérieur */
+.face__text h1 {
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+.face__text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.face__text a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: bold;
+}.face__text {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s 1.5s forwards;
+  position: relative;
+  width: 100%; /* S'assure de prendre toute la largeur sous la tête */
+}
+
+/* Conteneur principal : aligne le visage SVG et le texte verticalement */
+.my-custom-face-container {
+    display: flex;
+    flex-direction: column; /* Place les éléments du haut vers le bas */
+    align-items: center;    /* Centre horizontalement le SVG et le texte */
+    justify-content: center;
+    min-height: 100vh;      /* Centre le tout au milieu de l'écran */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Taille de la tête SVG */
+.face {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* Bloc de texte sous la tête */
+.face__text {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style des liens et titres à l'intérieur */
+.face__text h1 {
+    font-size: 3rem;
+    margin: 10px 0 5px 0;
+}
+
+.face__text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.face__text a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: bold;
+}
